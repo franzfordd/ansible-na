@@ -1,5 +1,6 @@
 [ROUTERS]
 Router-GW ansible_host=10.10.207.1
+Router-2 ansible_host=10.10.207.2
 
 [ROUTERS:vars]
 ansible_user=cisco
