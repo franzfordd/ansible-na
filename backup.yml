@@ -20,7 +20,7 @@
   run_once: true
 
 - hosts: ROUTERS
-
+  connection: local
   tasks:
    - name: Backup config  
      ios_command: 
