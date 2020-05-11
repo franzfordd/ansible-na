@@ -1,0 +1,13 @@
+---
+
+- hosts: ROUTERS
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: Change Hostname IOU1
+      ios_config:
+       lines:
+        - network 1.1.1.1 0.0.0.255 area 0
+        - router-id 1.1.1.1
+       parents: router ospf 100

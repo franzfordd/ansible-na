@@ -1,0 +1,6 @@
+[ROUTERS]
+Router-GW ansible_host=10.10.207.1
+
+[ROUTERS:vars]
+ansible_user=cisco
+ansible_ssh_pass=novirus
